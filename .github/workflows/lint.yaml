@@ -21,6 +21,6 @@ jobs:
         with:
           github_token: ${{ github.token }}
           level: warning
-          golangci_lint_flags: "--config=.golintci.yml"
+          golangci_lint_flags: "--config=./.golintci.yml"
           filter_mode: nofilter
           reporter: github-pr-review
