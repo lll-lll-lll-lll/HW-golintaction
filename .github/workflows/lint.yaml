@@ -12,15 +12,7 @@ jobs:
           go-version: ^1.19 
           cache: false
       - uses: actions/checkout@v3
-      # - name: golangci-lint
-      #   uses: golangci/golangci-lint-action@v3
-      #   with:
-      #     version: latest
       - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v1
+        uses: golangci/golangci-lint-action@v3
         with:
-          github_token: ${{ github.token }}
-          level: warning
-          golangci_lint_flags: "--config=./.golintci.yml"
-          filter_mode: nofilter
-          reporter: github-pr-review
+          version: latest
