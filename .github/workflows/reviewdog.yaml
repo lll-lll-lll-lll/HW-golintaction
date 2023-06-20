@@ -1,6 +1,7 @@
 name: go-lint
 on:
   pull_request:
+    types: [opened, synchronize]
 jobs:
   lint:
     runs-on: ubuntu-latest
